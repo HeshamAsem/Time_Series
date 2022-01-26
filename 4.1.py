@@ -26,7 +26,7 @@ opsd_daily = pd.read_csv('opsd_germany_daily.csv', index_col=0,
 # Add columns with year, month, and weekday name
 opsd_daily['Year'] = opsd_daily.index.year
 opsd_daily['Month'] = opsd_daily.index.month
-opsd_daily['Weekday Name'] = opsd_daily.index.weekday_name
+opsd_daily['Weekday Name'] = opsd_daily.index.day_name
 # Display a random sampling of 5 rows
 opsd_daily.sample(5, random_state=0)
 
